@@ -1,0 +1,27 @@
+.container--tabs {
+	margin: 2rem;
+}
+.nav-tabs {
+  float: left;
+  width: 100%;
+  list-style-type: none;
+  border-bottom: 1px solid #ddd;
+  }
+.nav-tabs a {
+    float: left;
+    padding: 10px;
+    text-decoration: none;
+    color: lightslategray;
+			}
+	.tab-content {
+		float: left;
+    }
+.tab-pane {
+    display: none;
+        }		
+.active {
+	display: block;
+		}
+	
+
+
