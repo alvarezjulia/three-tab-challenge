@@ -10,36 +10,58 @@
 </head>
 
 <body>
-    <h1>ABP Triple Tab Test</h1>
-
-    <div>
-        <a href="#general">General</a>
-        <a href="#form">Form</a>
-        <a href="#help">Help</a>
+    <header class="header typewriter">
+        <h1>ABP Triple Tab Test</h1>
+    </header>
+    <div class="container">
+        <div class="nav-bar">
+            <a href="#general">General</a>
+            <a href="#form">Form</a>
+            <a href="#help">Help</a>
+        </div>
         <div class="main-container">
 
-            <div id="general" class="tab-pane active">
-                <h1>Hello 1</h1>
+            <div id="#general" class="tab-pane active">
+                <h1>What I like in life</h1>
             </div>
-            <div id="form" class="tab-pane">
-                <h1>Num 2</h1>
+            <div id="#form" class="tab-pane">
+                <form>
+                    <h1>Your valuable details</h1>
+
+                    <fieldset class="choose-monster">
+                        <legend>Choose your favorite monster</legend>
+                        <input value="kraken" id="kraken" type="checkbox" />
+                        <label for="kraken">Kraken</label>
+                        <input value="sasquatsch" id="sasquatsch" type="checkbox" />
+                        <label for="sasquatsch">Sasquatsch</label>
+                        <input value="mothman" id="mothman" type="checkbox" />
+                        <label for="mothman">Mothman</label>
+                    </fieldset>
+
+                    <fieldset class="meet-monster">
+                        <legend>Meet the monster!</legend>
+                        <label for="name">Your name</label>
+                        <input type="text" id="name" required />
+                        <label for="address">Your address</label>
+                        <input type="text" id="address" required />
+                        <input type="submit" value="Submit" />
+                    </fieldset>
+
+                </form>
             </div>
-            <div id="help" class="tab-pane">
-                <h1>Hello 3</h1>
+            <div id="#help" class="tab-pane">
+                <h1>Help</h1>
+                <p>Cupidatat eu ipsum magna esse. Culpa cillum officia labore voluptate consectetur. Ut dolore eiusmod
+                    fugiat incididunt officia laborum excepteur ad aute voluptate laborum ad nisi. Lorem adipisicing
+                    exercitation esse ea in et nisi veniam officia. Irure labore aliquip quis reprehenderit est sunt.
+
+                    Reprehenderit consectetur aliqua enim aliqua id nisi aliquip id ipsum qui pariatur. Eiusmod ea duis
+                    eu Lorem cillum ex. Et dolor officia dolore aliqua ea esse enim nulla do Lorem velit sunt veniam.
+                    Laborum est ad laboris cillum irure cupidatat incididunt esse do irure.</p>
             </div>
         </div>
     </div>
 
-    <h3>OTHER</h3>
-    <div class="container--tabs">
-        <section class="row">
-            <ul class="nav nav-tabs">
-                <li class="active"><a id="hey" href="#tab-1">Tab 1</a></li>
-                <li class=""><a href="#tab-2">Tab 2</a></li>
-                <li class=""><a href="#tab-3">Tab 3</a></li>
-            </ul>
-        </section>
-    </div>
     <script src="./index.js"></script>
 </body>
 

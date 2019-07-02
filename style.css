@@ -1,27 +1,98 @@
-.container--tabs {
-	margin: 2rem;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.nav-tabs {
-  float: left;
-  width: 100%;
-  list-style-type: none;
-  border-bottom: 1px solid #ddd;
-  }
-.nav-tabs a {
-    float: left;
-    padding: 10px;
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #FFECBE;
+}
+
+/* HEADER */
+.header {
+    height: 25vh;
+    line-height: 25vh;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    margin: 0 auto;
+    animation: 
+    typing 5s steps(30, end),
+    blink-caret .2s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* MAIN CONTAINER */
+.container {
+    display: flex;
+} 
+
+.nav-bar {
+    width: 15vw;
+    margin: 0 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar a {
     text-decoration: none;
-    color: lightslategray;
-			}
-	.tab-content {
-		float: left;
-    }
+    padding: 1rem;
+    color: black;
+}
+
+.main-container {
+    background-color: #fff;
+    height: 73vh;
+    width: 82vw;
+}
+
+.main-container {
+    padding: 3rem;
+}
+
 .tab-pane {
     display: none;
-        }		
+}		
 .active {
-	display: block;
-		}
-	
+    display: flex;
+    flex-direction: column;
+}
 
+/* FORM */
+fieldset {
+    padding: 1rem;
+    display: flex;
+}
 
+legend {
+    background-color: black;
+    color: #fff;
+    padding: 0.8rem;
+}
+
+.choose-monster {
+    display: block; 
+}
+
+.meet-monster {
+    color: darkgrey;
+}
+
+/* .checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+} */
