@@ -14,8 +14,8 @@
         <h1>ABP Triple Tab Test</h1>
     </header>
     <div class="container">
-        <div class="nav-bar">
-            <a href="#general">General</a>
+        <div class="nav-bar" id="nav-bar">
+            <a href="#general" class="active">General</a>
             <a href="#form">Form</a>
             <a href="#help">Help</a>
         </div>
@@ -30,11 +30,11 @@
 
                     <fieldset class="choose-monster">
                         <legend>Choose your favorite monster</legend>
-                        <input value="kraken" id="kraken" type="checkbox" />
+                        <input name="monster" value="kraken" id="kraken" type="radio" required />
                         <label for="kraken">Kraken</label>
-                        <input value="sasquatsch" id="sasquatsch" type="checkbox" />
+                        <input name="monster" value="sasquatsch" id="sasquatsch" type="radio" />
                         <label for="sasquatsch">Sasquatsch</label>
-                        <input value="mothman" id="mothman" type="checkbox" />
+                        <input name="monster" value="mothman" id="mothman" type="radio" />
                         <label for="mothman">Mothman</label>
                     </fieldset>
 
@@ -44,7 +44,7 @@
                         <input type="text" id="name" required />
                         <label for="address">Your address</label>
                         <input type="text" id="address" required />
-                        <input type="submit" value="Submit" />
+                        <input type="submit" value="Submit" id="submit" />
                     </fieldset>
 
                 </form>
