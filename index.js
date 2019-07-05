@@ -18,4 +18,5 @@ window.addEventListener("load", function () {
 document.querySelector("form").addEventListener('submit', e => {
     e.preventDefault()
     alert(`Thank you for submitting your details ${e.target.name.value}!`)
+    document.getElementById("submit").disabled = true
 })
