@@ -59,7 +59,13 @@ body {
 
 .tab-pane {
     display: none;
+  line-height: 25px;
 }		
+
+.tab-pane h1{
+  margin-bottom: 2rem;
+}
+
 .active {
     display: flex;
     flex-direction: column;
@@ -70,6 +76,11 @@ body {
 fieldset {
     padding: 1rem;
     display: flex;
+  margin-bottom: 2rem;
+}
+
+input {
+  margin-bottom: 1rem;
 }
 
 legend {
